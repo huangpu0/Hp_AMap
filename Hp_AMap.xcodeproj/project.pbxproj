@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6A1C0AF228E78350036B350 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0AE228E78350036B350 /* AppDelegate.m */; };
+		F6A1C0B2228E78350036B350 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0B1228E78350036B350 /* ViewController.m */; };
+		F6A1C0B5228E78350036B350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A1C0B3228E78350036B350 /* Main.storyboard */; };
+		F6A1C0B7228E78360036B350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A1C0B6228E78360036B350 /* Assets.xcassets */; };
+		F6A1C0BA228E78360036B350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A1C0B8228E78360036B350 /* LaunchScreen.storyboard */; };
+		F6A1C0BD228E78360036B350 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0BC228E78360036B350 /* main.m */; };
+		F6A1C0C7228E78360036B350 /* Hp_AMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0C6228E78360036B350 /* Hp_AMapTests.m */; };
+		F6A1C0D2228E78360036B350 /* Hp_AMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0D1228E78360036B350 /* Hp_AMapUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6A1C0C3228E78360036B350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6A1C0A2228E78350036B350 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A1C0A9228E78350036B350;
+			remoteInfo = Hp_AMap;
+		};
+		F6A1C0CE228E78360036B350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6A1C0A2228E78350036B350 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A1C0A9228E78350036B350;
+			remoteInfo = Hp_AMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6A1C0AA228E78350036B350 /* Hp_AMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hp_AMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A1C0AD228E78350036B350 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6A1C0AE228E78350036B350 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6A1C0B0228E78350036B350 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F6A1C0B1228E78350036B350 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F6A1C0B4228E78350036B350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6A1C0B6228E78360036B350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6A1C0B9228E78360036B350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6A1C0BB228E78360036B350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A1C0BC228E78360036B350 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6A1C0C2228E78360036B350 /* Hp_AMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hp_AMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A1C0C6228E78360036B350 /* Hp_AMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hp_AMapTests.m; sourceTree = "<group>"; };
+		F6A1C0C8228E78360036B350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A1C0CD228E78360036B350 /* Hp_AMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hp_AMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A1C0D1228E78360036B350 /* Hp_AMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hp_AMapUITests.m; sourceTree = "<group>"; };
+		F6A1C0D3228E78360036B350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A1C0E3228E79310036B350 /* AMap_Configs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMap_Configs.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6A1C0A7228E78350036B350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A1C0BF228E78360036B350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A1C0CA228E78360036B350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6A1C0A1228E78350036B350 = {
+			isa = PBXGroup;
+			children = (
+				F6A1C0AC228E78350036B350 /* Hp_AMap */,
+				F6A1C0C5228E78360036B350 /* Hp_AMapTests */,
+				F6A1C0D0228E78360036B350 /* Hp_AMapUITests */,
+				F6A1C0AB228E78350036B350 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6A1C0AB228E78350036B350 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6A1C0AA228E78350036B350 /* Hp_AMap.app */,
+				F6A1C0C2228E78360036B350 /* Hp_AMapTests.xctest */,
+				F6A1C0CD228E78360036B350 /* Hp_AMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6A1C0AC228E78350036B350 /* Hp_AMap */ = {
+			isa = PBXGroup;
+			children = (
+				F6A1C0AD228E78350036B350 /* AppDelegate.h */,
+				F6A1C0AE228E78350036B350 /* AppDelegate.m */,
+				F6A1C0DF228E788A0036B350 /* AMapConfigs */,
+				F6A1C0B0228E78350036B350 /* ViewController.h */,
+				F6A1C0B1228E78350036B350 /* ViewController.m */,
+				F6A1C0B3228E78350036B350 /* Main.storyboard */,
+				F6A1C0B6228E78360036B350 /* Assets.xcassets */,
+				F6A1C0B8228E78360036B350 /* LaunchScreen.storyboard */,
+				F6A1C0BB228E78360036B350 /* Info.plist */,
+				F6A1C0BC228E78360036B350 /* main.m */,
+			);
+			path = Hp_AMap;
+			sourceTree = "<group>";
+		};
+		F6A1C0C5228E78360036B350 /* Hp_AMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6A1C0C6228E78360036B350 /* Hp_AMapTests.m */,
+				F6A1C0C8228E78360036B350 /* Info.plist */,
+			);
+			path = Hp_AMapTests;
+			sourceTree = "<group>";
+		};
+		F6A1C0D0228E78360036B350 /* Hp_AMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6A1C0D1228E78360036B350 /* Hp_AMapUITests.m */,
+				F6A1C0D3228E78360036B350 /* Info.plist */,
+			);
+			path = Hp_AMapUITests;
+			sourceTree = "<group>";
+		};
+		F6A1C0DF228E788A0036B350 /* AMapConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				F6A1C0E3228E79310036B350 /* AMap_Configs.h */,
+			);
+			path = AMapConfigs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6A1C0A9228E78350036B350 /* Hp_AMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A1C0D6228E78360036B350 /* Build configuration list for PBXNativeTarget "Hp_AMap" */;
+			buildPhases = (
+				F6A1C0A6228E78350036B350 /* Sources */,
+				F6A1C0A7228E78350036B350 /* Frameworks */,
+				F6A1C0A8228E78350036B350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hp_AMap;
+			productName = Hp_AMap;
+			productReference = F6A1C0AA228E78350036B350 /* Hp_AMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6A1C0C1228E78360036B350 /* Hp_AMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A1C0D9228E78360036B350 /* Build configuration list for PBXNativeTarget "Hp_AMapTests" */;
+			buildPhases = (
+				F6A1C0BE228E78360036B350 /* Sources */,
+				F6A1C0BF228E78360036B350 /* Frameworks */,
+				F6A1C0C0228E78360036B350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6A1C0C4228E78360036B350 /* PBXTargetDependency */,
+			);
+			name = Hp_AMapTests;
+			productName = Hp_AMapTests;
+			productReference = F6A1C0C2228E78360036B350 /* Hp_AMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6A1C0CC228E78360036B350 /* Hp_AMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A1C0DC228E78360036B350 /* Build configuration list for PBXNativeTarget "Hp_AMapUITests" */;
+			buildPhases = (
+				F6A1C0C9228E78360036B350 /* Sources */,
+				F6A1C0CA228E78360036B350 /* Frameworks */,
+				F6A1C0CB228E78360036B350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6A1C0CF228E78360036B350 /* PBXTargetDependency */,
+			);
+			name = Hp_AMapUITests;
+			productName = Hp_AMapUITests;
+			productReference = F6A1C0CD228E78360036B350 /* Hp_AMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6A1C0A2228E78350036B350 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "朴子hp";
+				TargetAttributes = {
+					F6A1C0A9228E78350036B350 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F6A1C0C1228E78360036B350 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F6A1C0A9228E78350036B350;
+					};
+					F6A1C0CC228E78360036B350 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F6A1C0A9228E78350036B350;
+					};
+				};
+			};
+			buildConfigurationList = F6A1C0A5228E78350036B350 /* Build configuration list for PBXProject "Hp_AMap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6A1C0A1228E78350036B350;
+			productRefGroup = F6A1C0AB228E78350036B350 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6A1C0A9228E78350036B350 /* Hp_AMap */,
+				F6A1C0C1228E78360036B350 /* Hp_AMapTests */,
+				F6A1C0CC228E78360036B350 /* Hp_AMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6A1C0A8228E78350036B350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A1C0BA228E78360036B350 /* LaunchScreen.storyboard in Resources */,
+				F6A1C0B7228E78360036B350 /* Assets.xcassets in Resources */,
+				F6A1C0B5228E78350036B350 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A1C0C0228E78360036B350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A1C0CB228E78360036B350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6A1C0A6228E78350036B350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A1C0B2228E78350036B350 /* ViewController.m in Sources */,
+				F6A1C0BD228E78360036B350 /* main.m in Sources */,
+				F6A1C0AF228E78350036B350 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A1C0BE228E78360036B350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A1C0C7228E78360036B350 /* Hp_AMapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A1C0C9228E78360036B350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A1C0D2228E78360036B350 /* Hp_AMapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6A1C0C4228E78360036B350 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6A1C0A9228E78350036B350 /* Hp_AMap */;
+			targetProxy = F6A1C0C3228E78360036B350 /* PBXContainerItemProxy */;
+		};
+		F6A1C0CF228E78360036B350 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6A1C0A9228E78350036B350 /* Hp_AMap */;
+			targetProxy = F6A1C0CE228E78360036B350 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6A1C0B3228E78350036B350 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6A1C0B4228E78350036B350 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6A1C0B8228E78360036B350 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6A1C0B9228E78360036B350 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6A1C0D4228E78360036B350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6A1C0D5228E78360036B350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6A1C0D7228E78360036B350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5HE6F5JF4;
+				INFOPLIST_FILE = Hp_AMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hp.Hp-AMap";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6A1C0D8228E78360036B350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5HE6F5JF4;
+				INFOPLIST_FILE = Hp_AMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hp.Hp-AMap";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F6A1C0DA228E78360036B350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5HE6F5JF4;
+				INFOPLIST_FILE = Hp_AMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hp.Hp-AMapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hp_AMap.app/Hp_AMap";
+			};
+			name = Debug;
+		};
+		F6A1C0DB228E78360036B350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5HE6F5JF4;
+				INFOPLIST_FILE = Hp_AMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hp.Hp-AMapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hp_AMap.app/Hp_AMap";
+			};
+			name = Release;
+		};
+		F6A1C0DD228E78360036B350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5HE6F5JF4;
+				INFOPLIST_FILE = Hp_AMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hp.Hp-AMapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hp_AMap;
+			};
+			name = Debug;
+		};
+		F6A1C0DE228E78360036B350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5HE6F5JF4;
+				INFOPLIST_FILE = Hp_AMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hp.Hp-AMapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hp_AMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6A1C0A5228E78350036B350 /* Build configuration list for PBXProject "Hp_AMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A1C0D4228E78360036B350 /* Debug */,
+				F6A1C0D5228E78360036B350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A1C0D6228E78360036B350 /* Build configuration list for PBXNativeTarget "Hp_AMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A1C0D7228E78360036B350 /* Debug */,
+				F6A1C0D8228E78360036B350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A1C0D9228E78360036B350 /* Build configuration list for PBXNativeTarget "Hp_AMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A1C0DA228E78360036B350 /* Debug */,
+				F6A1C0DB228E78360036B350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A1C0DC228E78360036B350 /* Build configuration list for PBXNativeTarget "Hp_AMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A1C0DD228E78360036B350 /* Debug */,
+				F6A1C0DE228E78360036B350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6A1C0A2228E78350036B350 /* Project object */;
+}
