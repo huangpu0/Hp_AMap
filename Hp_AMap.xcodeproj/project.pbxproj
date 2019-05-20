@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AC17F50862FE1C643CA3AE4 /* libPods-Hp_AMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CAC04E111ADA75139DC513 /* libPods-Hp_AMap.a */; };
 		F6A1C0AF228E78350036B350 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0AE228E78350036B350 /* AppDelegate.m */; };
 		F6A1C0B2228E78350036B350 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0B1228E78350036B350 /* ViewController.m */; };
 		F6A1C0B5228E78350036B350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A1C0B3228E78350036B350 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D4E8092907FA3047BDF9CA2 /* Pods-Hp_AMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hp_AMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hp_AMap/Pods-Hp_AMap.debug.xcconfig"; sourceTree = "<group>"; };
+		F479579C362D14F4EDEB9B2C /* Pods-Hp_AMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hp_AMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hp_AMap/Pods-Hp_AMap.release.xcconfig"; sourceTree = "<group>"; };
+		F5CAC04E111ADA75139DC513 /* libPods-Hp_AMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hp_AMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A1C0AA228E78350036B350 /* Hp_AMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hp_AMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A1C0AD228E78350036B350 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6A1C0AE228E78350036B350 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC17F50862FE1C643CA3AE4 /* libPods-Hp_AMap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B4051F7A2E3DF2524D378FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5CAC04E111ADA75139DC513 /* libPods-Hp_AMap.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE5D17E749132A0424A47587 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D4E8092907FA3047BDF9CA2 /* Pods-Hp_AMap.debug.xcconfig */,
+				F479579C362D14F4EDEB9B2C /* Pods-Hp_AMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F6A1C0A1228E78350036B350 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +108,8 @@
 				F6A1C0C5228E78360036B350 /* Hp_AMapTests */,
 				F6A1C0D0228E78360036B350 /* Hp_AMapUITests */,
 				F6A1C0AB228E78350036B350 /* Products */,
+				DE5D17E749132A0424A47587 /* Pods */,
+				6B4051F7A2E3DF2524D378FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6A1C0D6228E78360036B350 /* Build configuration list for PBXNativeTarget "Hp_AMap" */;
 			buildPhases = (
+				D6218EEC8578B36BFB692A11 /* [CP] Check Pods Manifest.lock */,
 				F6A1C0A6228E78350036B350 /* Sources */,
 				F6A1C0A7228E78350036B350 /* Frameworks */,
 				F6A1C0A8228E78350036B350 /* Resources */,
+				BC4446AB96CCE02BEFF7264B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,6 +292,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC4446AB96CCE02BEFF7264B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hp_AMap/Pods-Hp_AMap-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hp_AMap/Pods-Hp_AMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6218EEC8578B36BFB692A11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hp_AMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6A1C0A6228E78350036B350 /* Sources */ = {
@@ -443,11 +508,13 @@
 		};
 		F6A1C0D7228E78360036B350 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D4E8092907FA3047BDF9CA2 /* Pods-Hp_AMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5HE6F5JF4;
 				INFOPLIST_FILE = Hp_AMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,11 +527,13 @@
 		};
 		F6A1C0D8228E78360036B350 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F479579C362D14F4EDEB9B2C /* Pods-Hp_AMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5HE6F5JF4;
 				INFOPLIST_FILE = Hp_AMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
