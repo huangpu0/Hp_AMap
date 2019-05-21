@@ -1,0 +1,28 @@
+//
+//  AMap_PrefixHeader.pch
+//  Hp_AMap
+//
+//  Created by 朴子hp on 2019/5/20.
+//  Copyright © 2019 朴子hp. All rights reserved.
+//
+
+#ifndef AMap_PrefixHeader_pch
+#define AMap_PrefixHeader_pch
+
+#import <MAMapKit/MAMapKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import "AMap_Configs.h"
+#import "AMapBaseView.h"
+
+#import "DriversPointAnnotation.h"
+#import "FromPointAnnotation.h"
+#import "ToPointAnnotation.h"
+#import "FromAnnotationView.h"
+#import "ToAnnotationView.h"
+
+#import "UIView+Extension.h"
+#import <YYWebImage/YYWebImage.h>
+
+#endif /* AMap_PrefixHeader_pch */

@@ -8,14 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8AC17F50862FE1C643CA3AE4 /* libPods-Hp_AMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CAC04E111ADA75139DC513 /* libPods-Hp_AMap.a */; };
+		F6069D6B22943B090081579C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F6069D6A22943B090081579C /* UIView+Extension.m */; };
+		F656CDED22929F7000A279A7 /* AMap_SearchViewCtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = F656CDEC22929F7000A279A7 /* AMap_SearchViewCtroller.m */; };
+		F656CDF022929FA900A279A7 /* AMap_AMapViewCtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = F656CDEF22929FA900A279A7 /* AMap_AMapViewCtroller.m */; };
 		F6A1C0AF228E78350036B350 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0AE228E78350036B350 /* AppDelegate.m */; };
 		F6A1C0B2228E78350036B350 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0B1228E78350036B350 /* ViewController.m */; };
-		F6A1C0B5228E78350036B350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A1C0B3228E78350036B350 /* Main.storyboard */; };
 		F6A1C0B7228E78360036B350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A1C0B6228E78360036B350 /* Assets.xcassets */; };
-		F6A1C0BA228E78360036B350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A1C0B8228E78360036B350 /* LaunchScreen.storyboard */; };
 		F6A1C0BD228E78360036B350 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0BC228E78360036B350 /* main.m */; };
 		F6A1C0C7228E78360036B350 /* Hp_AMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0C6228E78360036B350 /* Hp_AMapTests.m */; };
 		F6A1C0D2228E78360036B350 /* Hp_AMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0D1228E78360036B350 /* Hp_AMapUITests.m */; };
+		F6FC5A682293C93B0033B9F3 /* AMapBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FC5A672293C93B0033B9F3 /* AMapBaseView.m */; };
+		F6FC5A6E229400660033B9F3 /* ToPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FC5A6D229400650033B9F3 /* ToPointAnnotation.m */; };
+		F6FC5A7D229401680033B9F3 /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FC5A7C229401680033B9F3 /* CustomCalloutView.m */; };
+		F6FC5A83229404380033B9F3 /* DriversPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FC5A82229404380033B9F3 /* DriversPointAnnotation.m */; };
+		F6FC5A862294047F0033B9F3 /* FromPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FC5A852294047F0033B9F3 /* FromPointAnnotation.m */; };
+		F6FC5A89229404EB0033B9F3 /* FromAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FC5A88229404EB0033B9F3 /* FromAnnotationView.m */; };
+		F6FC5A8C2294050C0033B9F3 /* ToAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FC5A8B2294050C0033B9F3 /* ToAnnotationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,14 +47,19 @@
 		5D4E8092907FA3047BDF9CA2 /* Pods-Hp_AMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hp_AMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hp_AMap/Pods-Hp_AMap.debug.xcconfig"; sourceTree = "<group>"; };
 		F479579C362D14F4EDEB9B2C /* Pods-Hp_AMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hp_AMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hp_AMap/Pods-Hp_AMap.release.xcconfig"; sourceTree = "<group>"; };
 		F5CAC04E111ADA75139DC513 /* libPods-Hp_AMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hp_AMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6069D6922943AF40081579C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		F6069D6A22943B090081579C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		F656CDEA22929C6100A279A7 /* AMap_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMap_PrefixHeader.pch; sourceTree = "<group>"; };
+		F656CDEB22929F7000A279A7 /* AMap_SearchViewCtroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMap_SearchViewCtroller.h; sourceTree = "<group>"; };
+		F656CDEC22929F7000A279A7 /* AMap_SearchViewCtroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMap_SearchViewCtroller.m; sourceTree = "<group>"; };
+		F656CDEE22929FA900A279A7 /* AMap_AMapViewCtroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMap_AMapViewCtroller.h; sourceTree = "<group>"; };
+		F656CDEF22929FA900A279A7 /* AMap_AMapViewCtroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMap_AMapViewCtroller.m; sourceTree = "<group>"; };
 		F6A1C0AA228E78350036B350 /* Hp_AMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hp_AMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A1C0AD228E78350036B350 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6A1C0AE228E78350036B350 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F6A1C0B0228E78350036B350 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F6A1C0B1228E78350036B350 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F6A1C0B4228E78350036B350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6A1C0B6228E78360036B350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F6A1C0B9228E78360036B350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6A1C0BB228E78360036B350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6A1C0BC228E78360036B350 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6A1C0C2228E78360036B350 /* Hp_AMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hp_AMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +69,20 @@
 		F6A1C0D1228E78360036B350 /* Hp_AMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hp_AMapUITests.m; sourceTree = "<group>"; };
 		F6A1C0D3228E78360036B350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6A1C0E3228E79310036B350 /* AMap_Configs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMap_Configs.h; sourceTree = "<group>"; };
+		F6FC5A662293C93B0033B9F3 /* AMapBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMapBaseView.h; sourceTree = "<group>"; };
+		F6FC5A672293C93B0033B9F3 /* AMapBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapBaseView.m; sourceTree = "<group>"; };
+		F6FC5A6C2294004A0033B9F3 /* ToPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToPointAnnotation.h; sourceTree = "<group>"; };
+		F6FC5A6D229400650033B9F3 /* ToPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToPointAnnotation.m; sourceTree = "<group>"; };
+		F6FC5A7B2294015E0033B9F3 /* CustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalloutView.h; sourceTree = "<group>"; };
+		F6FC5A7C229401680033B9F3 /* CustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalloutView.m; sourceTree = "<group>"; };
+		F6FC5A81229404380033B9F3 /* DriversPointAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DriversPointAnnotation.h; sourceTree = "<group>"; };
+		F6FC5A82229404380033B9F3 /* DriversPointAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DriversPointAnnotation.m; sourceTree = "<group>"; };
+		F6FC5A842294047F0033B9F3 /* FromPointAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FromPointAnnotation.h; sourceTree = "<group>"; };
+		F6FC5A852294047F0033B9F3 /* FromPointAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FromPointAnnotation.m; sourceTree = "<group>"; };
+		F6FC5A87229404EB0033B9F3 /* FromAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FromAnnotationView.h; sourceTree = "<group>"; };
+		F6FC5A88229404EB0033B9F3 /* FromAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FromAnnotationView.m; sourceTree = "<group>"; };
+		F6FC5A8A2294050C0033B9F3 /* ToAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToAnnotationView.h; sourceTree = "<group>"; };
+		F6FC5A8B2294050C0033B9F3 /* ToAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToAnnotationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +128,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F656CDF222929FC900A279A7 /* AMapView */ = {
+			isa = PBXGroup;
+			children = (
+				F6FC5A662293C93B0033B9F3 /* AMapBaseView.h */,
+				F6FC5A672293C93B0033B9F3 /* AMapBaseView.m */,
+				F6FC5A81229404380033B9F3 /* DriversPointAnnotation.h */,
+				F6FC5A82229404380033B9F3 /* DriversPointAnnotation.m */,
+				F6FC5A842294047F0033B9F3 /* FromPointAnnotation.h */,
+				F6FC5A852294047F0033B9F3 /* FromPointAnnotation.m */,
+				F6FC5A6C2294004A0033B9F3 /* ToPointAnnotation.h */,
+				F6FC5A6D229400650033B9F3 /* ToPointAnnotation.m */,
+				F6FC5A87229404EB0033B9F3 /* FromAnnotationView.h */,
+				F6FC5A88229404EB0033B9F3 /* FromAnnotationView.m */,
+				F6FC5A8A2294050C0033B9F3 /* ToAnnotationView.h */,
+				F6FC5A8B2294050C0033B9F3 /* ToAnnotationView.m */,
+				F6FC5A7B2294015E0033B9F3 /* CustomCalloutView.h */,
+				F6FC5A7C229401680033B9F3 /* CustomCalloutView.m */,
+			);
+			path = AMapView;
+			sourceTree = "<group>";
+		};
 		F6A1C0A1228E78350036B350 = {
 			isa = PBXGroup;
 			children = (
@@ -128,12 +176,15 @@
 			children = (
 				F6A1C0AD228E78350036B350 /* AppDelegate.h */,
 				F6A1C0AE228E78350036B350 /* AppDelegate.m */,
+				F656CDF222929FC900A279A7 /* AMapView */,
 				F6A1C0DF228E788A0036B350 /* AMapConfigs */,
 				F6A1C0B0228E78350036B350 /* ViewController.h */,
 				F6A1C0B1228E78350036B350 /* ViewController.m */,
-				F6A1C0B3228E78350036B350 /* Main.storyboard */,
+				F656CDEB22929F7000A279A7 /* AMap_SearchViewCtroller.h */,
+				F656CDEC22929F7000A279A7 /* AMap_SearchViewCtroller.m */,
+				F656CDEE22929FA900A279A7 /* AMap_AMapViewCtroller.h */,
+				F656CDEF22929FA900A279A7 /* AMap_AMapViewCtroller.m */,
 				F6A1C0B6228E78360036B350 /* Assets.xcassets */,
-				F6A1C0B8228E78360036B350 /* LaunchScreen.storyboard */,
 				F6A1C0BB228E78360036B350 /* Info.plist */,
 				F6A1C0BC228E78360036B350 /* main.m */,
 			);
@@ -161,7 +212,10 @@
 		F6A1C0DF228E788A0036B350 /* AMapConfigs */ = {
 			isa = PBXGroup;
 			children = (
+				F6069D6922943AF40081579C /* UIView+Extension.h */,
+				F6069D6A22943B090081579C /* UIView+Extension.m */,
 				F6A1C0E3228E79310036B350 /* AMap_Configs.h */,
+				F656CDEA22929C6100A279A7 /* AMap_PrefixHeader.pch */,
 			);
 			path = AMapConfigs;
 			sourceTree = "<group>";
@@ -235,6 +289,11 @@
 				TargetAttributes = {
 					F6A1C0A9228E78350036B350 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					F6A1C0C1228E78360036B350 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -271,9 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6A1C0BA228E78360036B350 /* LaunchScreen.storyboard in Resources */,
 				F6A1C0B7228E78360036B350 /* Assets.xcassets in Resources */,
-				F6A1C0B5228E78350036B350 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,9 +394,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F656CDF022929FA900A279A7 /* AMap_AMapViewCtroller.m in Sources */,
+				F6FC5A862294047F0033B9F3 /* FromPointAnnotation.m in Sources */,
+				F6069D6B22943B090081579C /* UIView+Extension.m in Sources */,
+				F6FC5A6E229400660033B9F3 /* ToPointAnnotation.m in Sources */,
+				F6FC5A7D229401680033B9F3 /* CustomCalloutView.m in Sources */,
+				F6FC5A8C2294050C0033B9F3 /* ToAnnotationView.m in Sources */,
 				F6A1C0B2228E78350036B350 /* ViewController.m in Sources */,
 				F6A1C0BD228E78360036B350 /* main.m in Sources */,
+				F656CDED22929F7000A279A7 /* AMap_SearchViewCtroller.m in Sources */,
 				F6A1C0AF228E78350036B350 /* AppDelegate.m in Sources */,
+				F6FC5A89229404EB0033B9F3 /* FromAnnotationView.m in Sources */,
+				F6FC5A682293C93B0033B9F3 /* AMapBaseView.m in Sources */,
+				F6FC5A83229404380033B9F3 /* DriversPointAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,25 +440,6 @@
 			targetProxy = F6A1C0CE228E78360036B350 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F6A1C0B3228E78350036B350 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6A1C0B4228E78350036B350 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F6A1C0B8228E78360036B350 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6A1C0B9228E78360036B350 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F6A1C0D4228E78360036B350 /* Debug */ = {
@@ -511,8 +559,10 @@
 			baseConfigurationReference = 5D4E8092907FA3047BDF9CA2 /* Pods-Hp_AMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5HE6F5JF4;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Hp_AMap/AMapConfigs/AMap_PrefixHeader.pch";
 				INFOPLIST_FILE = Hp_AMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -521,7 +571,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hp.Hp-AMap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -530,8 +580,10 @@
 			baseConfigurationReference = F479579C362D14F4EDEB9B2C /* Pods-Hp_AMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5HE6F5JF4;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Hp_AMap/AMapConfigs/AMap_PrefixHeader.pch";
 				INFOPLIST_FILE = Hp_AMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -540,7 +592,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hp.Hp-AMap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

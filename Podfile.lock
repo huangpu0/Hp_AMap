@@ -6,11 +6,19 @@ PODS:
     - AMapFoundation (~> 1.4)
   - AMapSearch (6.6.0):
     - AMapFoundation (~> 1.4)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
 
 DEPENDENCIES:
   - AMap3DMap
   - AMapLocation
   - AMapSearch
+  - YYWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -18,13 +26,19 @@ SPEC REPOS:
     - AMapFoundation
     - AMapLocation
     - AMapSearch
+    - YYCache
+    - YYImage
+    - YYWebImage
 
 SPEC CHECKSUMS:
   AMap3DMap: 9fa4ec6ab230bfbd3f0c0834f757fbd7038efe53
   AMapFoundation: 20fce2a12cd152e1092afdd04379cdac21932185
   AMapLocation: 89a7e4eb6040d32ba73c77a4966ecc66e46aa7c3
   AMapSearch: def5983c8ca1a6d7430970046dc814f6e337621d
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: f63c3a791200b35f776b15ffe92100391cd3a470
+PODFILE CHECKSUM: d12e82018baae7ce107b94ae5727d12ecf3b0577
 
 COCOAPODS: 1.5.3
