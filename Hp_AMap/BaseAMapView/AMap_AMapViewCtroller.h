@@ -6,11 +6,11 @@
 //  Copyright © 2019 朴子hp. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseAMapView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AMap_AMapViewCtroller : UIViewController
+@interface AMap_AMapViewCtroller : BaseAMapView
 
 @end
 

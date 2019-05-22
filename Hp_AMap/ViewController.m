@@ -19,6 +19,12 @@
 @property (assign, nonatomic) double   lat;
 @property (assign, nonatomic) double   lng;
 
+/// 标注 发、收
+@property (strong, nonatomic) FromPointAnnotation *fromPoint;
+@property (strong, nonatomic) FromAnnotationView  *fromView;
+@property (strong, nonatomic) ToPointAnnotation   *toPoint;
+@property (strong, nonatomic) ToAnnotationView    *toView;
+
 @end
 
 @implementation ViewController
@@ -37,7 +43,7 @@
         _mapView.showsUserLocation = NO;
         _mapView.showsCompass = NO;
         _mapView.showsScale   = NO;
-        _mapView.distanceFilter  = 1000.0f;
+        _mapView.distanceFilter  = kCLLocationAccuracyHundredMeters;
         //iOS 9（包含iOS 9）之后新特性：将允许出现这种场景，同一app中多个locationmanager：一些只能在前台定位，另一些可在后台定位，并可随时禁止其后台定位。
         if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9) {
             _mapView.allowsBackgroundLocationUpdates = YES;
@@ -55,16 +61,66 @@
     [self initLocationManager];
     [self.view addSubview:self.mapView];
     
-    UIButton *btn = [[UIButton alloc]init];
-    btn.frame = CGRectMake(100, 100, 100, 100);
-    [btn addTarget:self action:@selector(searchView:) forControlEvents:UIControlEventTouchUpInside];
-    btn.backgroundColor = [UIColor redColor];
-    [self.view addSubview:btn];
+    UIButton *driverBtn = [[UIButton alloc]init];
+    driverBtn.frame = CGRectMake(20, kNavH + 10, 40, 40);
+    [driverBtn setTitle:@"司机" forState:UIControlStateNormal];
+    [driverBtn addTarget:self action:@selector(driverThouchEvent:) forControlEvents:UIControlEventTouchUpInside];
+    driverBtn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:driverBtn];
+    
+   
+    UIButton *timeBtn = [[UIButton alloc]init];
+    timeBtn.frame = CGRectMake(75, kNavH + 10, 40, 40);
+    [timeBtn setTitle:@"时间" forState:UIControlStateNormal];
+    [timeBtn addTarget:self action:@selector(timeThouchEvent:) forControlEvents:UIControlEventTouchUpInside];
+    timeBtn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:timeBtn];
+    
+    UIButton *removeBtn = [[UIButton alloc]init];
+    removeBtn.frame = CGRectMake(130, kNavH + 10, 40, 40);
+    [removeBtn setTitle:@"移除" forState:UIControlStateNormal];
+    [removeBtn addTarget:self action:@selector(removeThouchEvent:) forControlEvents:UIControlEventTouchUpInside];
+    removeBtn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:removeBtn];
+    
+    
+    UIButton *searchBtn = [[UIButton alloc]init];
+    searchBtn.frame = CGRectMake(185, kNavH + 10, 40, 40);
+    [searchBtn setTitle:@"搜索" forState:UIControlStateNormal];
+    [searchBtn addTarget:self action:@selector(searchView:) forControlEvents:UIControlEventTouchUpInside];
+    searchBtn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:searchBtn];
+    
+    UIButton *mapBtn = [[UIButton alloc]init];
+    mapBtn.frame = CGRectMake(240, kNavH + 10, 40, 40);
+    [mapBtn setTitle:@"地图" forState:UIControlStateNormal];
+    [mapBtn addTarget:self action:@selector(mapView:) forControlEvents:UIControlEventTouchUpInside];
+    mapBtn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:mapBtn];
+    
 }
-
+- (void)driverThouchEvent:(UIButton *)btn{
+    
+    for (int d = 0; d < 4; d ++) {
+        
+        DriversPointAnnotation *driverPoint = [[DriversPointAnnotation alloc]init];
+        driverPoint.coordinate = CLLocationCoordinate2DMake(31.294244 + d/10, 121.115348 + d/10);
+        [self.mapView addAnnotation:driverPoint];
+    }
+   
+}
+- (void)timeThouchEvent:(UIButton *)btn{
+    
+    ToPointAnnotation *toPoint = [[ToPointAnnotation alloc]init];
+    toPoint.coordinate = CLLocationCoordinate2DMake(31.994234, 121.115388);
+    [self.mapView addAnnotation:toPoint];
+    [self.mapView showAnnotations:self.mapView.annotations edgePadding:UIEdgeInsetsMake(200, 100, 200, 100) animated:YES];
+}
+- (void)removeThouchEvent:(UIButton *)btn{
+    [self.mapView removeAnnotations:self.mapView.annotations];
+}
 /// 初始化定位
 - (void)initLocationManager{
-    
     
     self.locManager.distanceFilter  = 1000.0f;
     self.locManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
@@ -93,10 +149,9 @@
         self.lat = location.coordinate.latitude;
         self.lng = location.coordinate.longitude;
         
-        DriversPointAnnotation *driversPoint = [[DriversPointAnnotation alloc]init];
-        driversPoint.coordinate = CLLocationCoordinate2DMake(self.lat, self.lng);
-        [self.mapView addAnnotation:driversPoint];
-        
+        FromPointAnnotation *fromPoint = [[FromPointAnnotation alloc]init];
+        fromPoint.coordinate = CLLocationCoordinate2DMake(self.lat, self.lng);
+        [self.mapView addAnnotation:fromPoint];
         [self.mapView setCenterCoordinate:CLLocationCoordinate2DMake(self.lat, self.lng) animated:YES];
     }
     
@@ -134,6 +189,8 @@
             fromView = [[FromAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:fromReuseIndentifier];
         }
         fromView.canShowCallout= NO;
+        fromView.image = [UIImage imageNamed:@"发"];
+        fromView.calloutView.title = @"附近2位配送员";
         return fromView;
     }else if ([annotation isKindOfClass:[ToPointAnnotation class]]){
         
@@ -144,6 +201,8 @@
             toView = [[ToAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:toReuseIndentifier];
         }
         toView.canShowCallout= NO;
+        toView.image = [UIImage imageNamed:@"收"];
+        toView.calloutView.title = @"预计12:00到达";
         return toView;
     }
     
@@ -153,6 +212,11 @@
 - (void)searchView:(UIButton *)btn{
     AMap_SearchViewCtroller *searchVC = [[AMap_SearchViewCtroller alloc]init];
     [self.navigationController pushViewController:searchVC animated:YES];
+}
+
+- (void)mapView:(UIButton *)btn{
+    AMap_AMapViewCtroller *mapVC = [[AMap_AMapViewCtroller alloc]init];
+    [self.navigationController pushViewController:mapVC animated:YES];
 }
 
 @end

@@ -91,7 +91,7 @@
 }
 
 - (void)dealloc{
-    NSLog(@"喜爱炮灰");
+    NSLog(@"页面销毁");
 }
 
 @end

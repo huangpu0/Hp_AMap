@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8AC17F50862FE1C643CA3AE4 /* libPods-Hp_AMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CAC04E111ADA75139DC513 /* libPods-Hp_AMap.a */; };
 		F6069D6B22943B090081579C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F6069D6A22943B090081579C /* UIView+Extension.m */; };
+		F6069D712294ECF30081579C /* BaseAMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6069D702294ECF30081579C /* BaseAMapView.m */; };
 		F656CDED22929F7000A279A7 /* AMap_SearchViewCtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = F656CDEC22929F7000A279A7 /* AMap_SearchViewCtroller.m */; };
 		F656CDF022929FA900A279A7 /* AMap_AMapViewCtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = F656CDEF22929FA900A279A7 /* AMap_AMapViewCtroller.m */; };
 		F6A1C0AF228E78350036B350 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0AE228E78350036B350 /* AppDelegate.m */; };
@@ -49,6 +50,8 @@
 		F5CAC04E111ADA75139DC513 /* libPods-Hp_AMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hp_AMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6069D6922943AF40081579C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		F6069D6A22943B090081579C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		F6069D6F2294ECF30081579C /* BaseAMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAMapView.h; sourceTree = "<group>"; };
+		F6069D702294ECF30081579C /* BaseAMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAMapView.m; sourceTree = "<group>"; };
 		F656CDEA22929C6100A279A7 /* AMap_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMap_PrefixHeader.pch; sourceTree = "<group>"; };
 		F656CDEB22929F7000A279A7 /* AMap_SearchViewCtroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMap_SearchViewCtroller.h; sourceTree = "<group>"; };
 		F656CDEC22929F7000A279A7 /* AMap_SearchViewCtroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMap_SearchViewCtroller.m; sourceTree = "<group>"; };
@@ -128,6 +131,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F6069D722294ED020081579C /* BaseAMapView */ = {
+			isa = PBXGroup;
+			children = (
+				F6069D6F2294ECF30081579C /* BaseAMapView.h */,
+				F6069D702294ECF30081579C /* BaseAMapView.m */,
+				F656CDEB22929F7000A279A7 /* AMap_SearchViewCtroller.h */,
+				F656CDEC22929F7000A279A7 /* AMap_SearchViewCtroller.m */,
+				F656CDEE22929FA900A279A7 /* AMap_AMapViewCtroller.h */,
+				F656CDEF22929FA900A279A7 /* AMap_AMapViewCtroller.m */,
+			);
+			path = BaseAMapView;
+			sourceTree = "<group>";
+		};
 		F656CDF222929FC900A279A7 /* AMapView */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,14 +192,11 @@
 			children = (
 				F6A1C0AD228E78350036B350 /* AppDelegate.h */,
 				F6A1C0AE228E78350036B350 /* AppDelegate.m */,
-				F656CDF222929FC900A279A7 /* AMapView */,
-				F6A1C0DF228E788A0036B350 /* AMapConfigs */,
 				F6A1C0B0228E78350036B350 /* ViewController.h */,
 				F6A1C0B1228E78350036B350 /* ViewController.m */,
-				F656CDEB22929F7000A279A7 /* AMap_SearchViewCtroller.h */,
-				F656CDEC22929F7000A279A7 /* AMap_SearchViewCtroller.m */,
-				F656CDEE22929FA900A279A7 /* AMap_AMapViewCtroller.h */,
-				F656CDEF22929FA900A279A7 /* AMap_AMapViewCtroller.m */,
+				F6A1C0DF228E788A0036B350 /* AMapConfigs */,
+				F656CDF222929FC900A279A7 /* AMapView */,
+				F6069D722294ED020081579C /* BaseAMapView */,
 				F6A1C0B6228E78360036B350 /* Assets.xcassets */,
 				F6A1C0BB228E78360036B350 /* Info.plist */,
 				F6A1C0BC228E78360036B350 /* main.m */,
@@ -402,6 +415,7 @@
 				F6FC5A8C2294050C0033B9F3 /* ToAnnotationView.m in Sources */,
 				F6A1C0B2228E78350036B350 /* ViewController.m in Sources */,
 				F6A1C0BD228E78360036B350 /* main.m in Sources */,
+				F6069D712294ECF30081579C /* BaseAMapView.m in Sources */,
 				F656CDED22929F7000A279A7 /* AMap_SearchViewCtroller.m in Sources */,
 				F6A1C0AF228E78350036B350 /* AppDelegate.m in Sources */,
 				F6FC5A89229404EB0033B9F3 /* FromAnnotationView.m in Sources */,

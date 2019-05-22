@@ -33,15 +33,17 @@
 {
     /// 添加标题视图
     self.titleLabel = [[UILabel alloc]init];
-    self.titleLabel.frame = CGRectMake(5, 0, self.frame.size.width, 25);
+    self.titleLabel.font       = [UIFont systemFontOfSize:11.0f];
+    self.titleLabel.textColor  = [UIColor redColor];
+    self.titleLabel.frame = CGRectMake(5, 0, 90, 20);
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:self.titleLabel];
     
 }
 
-- (void)setTitle:(NSMutableAttributedString *)title
+- (void)setTitle:(NSString *)title
 {
-    self.titleLabel.attributedText = title;
+    self.titleLabel.text = title;
 }
 
 - (void)drawRect:(CGRect)rect

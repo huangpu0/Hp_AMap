@@ -24,7 +24,7 @@
         self.backgroundColor = [UIColor clearColor];
         
         self.calloutView = [[CustomCalloutView alloc]init];
-        self.calloutView.frame = CGRectMake(0, 0, 125, 40);
+        self.calloutView.frame = CGRectMake(0, 0, 100, 30);
         self.calloutView.center = CGPointMake( self.calloutOffset.x + 10,-CGRectGetHeight(self.calloutView.bounds) / 2.f + self.calloutOffset.y);
         
         [self addSubview:self.calloutView];

@@ -6,7 +6,7 @@
 //  Copyright © 2019 朴子hp. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <MAMapKit/MAMapKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

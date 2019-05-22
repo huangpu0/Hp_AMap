@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CustomCalloutView : UIView
 
 /// 标题
-@property (nonatomic, strong) NSMutableAttributedString *title;
+@property (nonatomic, copy) NSString *title;
 
 @end
 

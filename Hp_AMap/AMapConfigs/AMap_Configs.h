@@ -12,17 +12,17 @@
 
 #pragma mark - iPhone设备相关
 
-#define IPHONE_5  (([UIScreen mainScreen].bounds.size.width == 320) && ([UIScreen mainScreen].bounds.size.height == 568))
+#define IPHONE_5      (([UIScreen mainScreen].bounds.size.width == 320) && ([UIScreen mainScreen].bounds.size.height == 568))
 
-#define IPHONE_6  (([UIScreen mainScreen].bounds.size.width == 375) && ([UIScreen mainScreen].bounds.size.height == 667))
+#define IPHONE_6      (([UIScreen mainScreen].bounds.size.width == 375) && ([UIScreen mainScreen].bounds.size.height == 667))
 
-#define IPHONE_6P (([UIScreen mainScreen].bounds.size.width == 414) && ([UIScreen mainScreen].bounds.size.height == 736))
+#define IPHONE_6P     (([UIScreen mainScreen].bounds.size.width == 414) && ([UIScreen mainScreen].bounds.size.height == 736))
 /// iphoneX与XS 一样
-#define IPHONE_X  (([UIScreen mainScreen].bounds.size.width == 375) && ([UIScreen mainScreen].bounds.size.height == 812))
+#define IPHONE_X      (([UIScreen mainScreen].bounds.size.width == 375) && ([UIScreen mainScreen].bounds.size.height == 812))
 
 #define IPHONE_XSMAX  (([UIScreen mainScreen].bounds.size.width == 375) && ([UIScreen mainScreen].bounds.size.height == 896))
 
-#define IPHONE_XR  (([UIScreen mainScreen].bounds.size.width == 414) && ([UIScreen mainScreen].bounds.size.height == 896))
+#define IPHONE_XR     (([UIScreen mainScreen].bounds.size.width == 414) && ([UIScreen mainScreen].bounds.size.height == 896))
 
 /**
  * 适配刘海导航栏、状态栏、屏幕宽高等
