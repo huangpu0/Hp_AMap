@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "BaseAMapView/AMap_AMapViewCtroller.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +22,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     [AMapServices sharedServices].apiKey = GD_APP_KEY;
-    ViewController *rootVC = [[ViewController alloc]init];
+    AMap_AMapViewCtroller *rootVC = [[AMap_AMapViewCtroller alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootVC];
     self.window.rootViewController = nav;
     

@@ -10,10 +10,8 @@
 		8AC17F50862FE1C643CA3AE4 /* libPods-Hp_AMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CAC04E111ADA75139DC513 /* libPods-Hp_AMap.a */; };
 		F6069D6B22943B090081579C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F6069D6A22943B090081579C /* UIView+Extension.m */; };
 		F6069D712294ECF30081579C /* BaseAMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6069D702294ECF30081579C /* BaseAMapView.m */; };
-		F656CDED22929F7000A279A7 /* AMap_SearchViewCtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = F656CDEC22929F7000A279A7 /* AMap_SearchViewCtroller.m */; };
 		F656CDF022929FA900A279A7 /* AMap_AMapViewCtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = F656CDEF22929FA900A279A7 /* AMap_AMapViewCtroller.m */; };
 		F6A1C0AF228E78350036B350 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0AE228E78350036B350 /* AppDelegate.m */; };
-		F6A1C0B2228E78350036B350 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0B1228E78350036B350 /* ViewController.m */; };
 		F6A1C0B7228E78360036B350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A1C0B6228E78360036B350 /* Assets.xcassets */; };
 		F6A1C0BD228E78360036B350 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0BC228E78360036B350 /* main.m */; };
 		F6A1C0C7228E78360036B350 /* Hp_AMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A1C0C6228E78360036B350 /* Hp_AMapTests.m */; };
@@ -53,15 +51,11 @@
 		F6069D6F2294ECF30081579C /* BaseAMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAMapView.h; sourceTree = "<group>"; };
 		F6069D702294ECF30081579C /* BaseAMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAMapView.m; sourceTree = "<group>"; };
 		F656CDEA22929C6100A279A7 /* AMap_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMap_PrefixHeader.pch; sourceTree = "<group>"; };
-		F656CDEB22929F7000A279A7 /* AMap_SearchViewCtroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMap_SearchViewCtroller.h; sourceTree = "<group>"; };
-		F656CDEC22929F7000A279A7 /* AMap_SearchViewCtroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMap_SearchViewCtroller.m; sourceTree = "<group>"; };
 		F656CDEE22929FA900A279A7 /* AMap_AMapViewCtroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMap_AMapViewCtroller.h; sourceTree = "<group>"; };
 		F656CDEF22929FA900A279A7 /* AMap_AMapViewCtroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMap_AMapViewCtroller.m; sourceTree = "<group>"; };
 		F6A1C0AA228E78350036B350 /* Hp_AMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hp_AMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A1C0AD228E78350036B350 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6A1C0AE228E78350036B350 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F6A1C0B0228E78350036B350 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F6A1C0B1228E78350036B350 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F6A1C0B6228E78360036B350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6A1C0BB228E78360036B350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6A1C0BC228E78360036B350 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,8 +130,6 @@
 			children = (
 				F6069D6F2294ECF30081579C /* BaseAMapView.h */,
 				F6069D702294ECF30081579C /* BaseAMapView.m */,
-				F656CDEB22929F7000A279A7 /* AMap_SearchViewCtroller.h */,
-				F656CDEC22929F7000A279A7 /* AMap_SearchViewCtroller.m */,
 				F656CDEE22929FA900A279A7 /* AMap_AMapViewCtroller.h */,
 				F656CDEF22929FA900A279A7 /* AMap_AMapViewCtroller.m */,
 			);
@@ -192,8 +184,6 @@
 			children = (
 				F6A1C0AD228E78350036B350 /* AppDelegate.h */,
 				F6A1C0AE228E78350036B350 /* AppDelegate.m */,
-				F6A1C0B0228E78350036B350 /* ViewController.h */,
-				F6A1C0B1228E78350036B350 /* ViewController.m */,
 				F6A1C0DF228E788A0036B350 /* AMapConfigs */,
 				F656CDF222929FC900A279A7 /* AMapView */,
 				F6069D722294ED020081579C /* BaseAMapView */,
@@ -413,10 +403,8 @@
 				F6FC5A6E229400660033B9F3 /* ToPointAnnotation.m in Sources */,
 				F6FC5A7D229401680033B9F3 /* CustomCalloutView.m in Sources */,
 				F6FC5A8C2294050C0033B9F3 /* ToAnnotationView.m in Sources */,
-				F6A1C0B2228E78350036B350 /* ViewController.m in Sources */,
 				F6A1C0BD228E78360036B350 /* main.m in Sources */,
 				F6069D712294ECF30081579C /* BaseAMapView.m in Sources */,
-				F656CDED22929F7000A279A7 /* AMap_SearchViewCtroller.m in Sources */,
 				F6A1C0AF228E78350036B350 /* AppDelegate.m in Sources */,
 				F6FC5A89229404EB0033B9F3 /* FromAnnotationView.m in Sources */,
 				F6FC5A682293C93B0033B9F3 /* AMapBaseView.m in Sources */,
